@@ -40,10 +40,10 @@ public class CallProcDemoWithCallableStatementCreator extends BaseDao {
 				.newCallableStatementCreator(paramMap);
 
 		String userInfo = jdbcTemplate.execute(csc,
-				new CallableStatementCallback() {
+				new CallableStatementCallback<String>() {
 
 					@Override
-					public Object doInCallableStatement(CallableStatement cs)
+					public String doInCallableStatement(CallableStatement cs)
 							throws SQLException, DataAccessException {
 						// Ö´ÐÐ
 						cs.execute();
