@@ -16,7 +16,7 @@ public class TestXmlCacheEhcache {
 	public void initContext() {
 		// Æô¶¯Spring ÈÝÆ÷
 		context = new ClassPathXmlApplicationContext(
-				"classpath:com/xgj/cache/springCacheXmlEhCache/conf_spring_ehcache.xml");
+				"classpath:conf_spring_ehcache.xml");
 	}
 
 	@Test
